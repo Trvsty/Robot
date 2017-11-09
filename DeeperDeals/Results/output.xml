@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20171102 11:25:14.043" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\Users\Travis\PycharmProjects\Development\robot-scripts\DeeperDeals\tests\deeperdeals.robot" id="s1" name="Deeperdeals">
+<test id="s1-t1" name="Log In As Buyer">
+<kw type="setup" name="Begin Test" library="Common">
+<kw name="Set Selenium Timeout" library="Selenium2Library">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>20s</arg>
+</arguments>
+<status status="PASS" endtime="20171102 11:25:15.822" starttime="20171102 11:25:15.822"></status>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${DEEPERDEALS}</arg>
+<arg>ff</arg>
+</arguments>
+<msg timestamp="20171102 11:25:15.822" level="INFO">Opening browser 'ff' to base url 'http://staging-app.deeperdeals.com/#!/auth/login'</msg>
+<status status="PASS" endtime="20171102 11:25:25.011" starttime="20171102 11:25:15.822"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Log In</arg>
+</arguments>
+<status status="PASS" endtime="20171102 11:25:25.176" starttime="20171102 11:25:25.011"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20171102 11:25:25.415" starttime="20171102 11:25:25.176"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20171102 11:25:30.415" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20171102 11:25:30.415" starttime="20171102 11:25:25.415"></status>
+</kw>
+<status status="PASS" endtime="20171102 11:25:30.415" starttime="20171102 11:25:15.822"></status>
+</kw>
+<kw name="Log In To DeeperDeals As Buyer" library="DeeperDeals">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${LOGINBUYERBTN}</arg>
+</arguments>
+<msg timestamp="20171102 11:25:30.417" level="INFO">Clicking element 'xpath=/html/body/div[1]/div/section/section/div[2]/div/p/a[4]'.</msg>
+<status status="PASS" endtime="20171102 11:25:30.834" starttime="20171102 11:25:30.417"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${LOGINBTN}</arg>
+</arguments>
+<msg timestamp="20171102 11:25:30.835" level="INFO">Clicking element 'xpath=/html/body/div[1]/div/section/section/div[2]/form/div[3]/button'.</msg>
+<status status="PASS" endtime="20171102 11:25:31.215" starttime="20171102 11:25:30.835"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>start sourcing</arg>
+</arguments>
+<status status="PASS" endtime="20171102 11:25:32.162" starttime="20171102 11:25:31.215"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20171102 11:25:37.163" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20171102 11:25:37.163" starttime="20171102 11:25:32.163"></status>
+</kw>
+<status status="PASS" endtime="20171102 11:25:37.163" starttime="20171102 11:25:30.416"></status>
+</kw>
+<kw type="teardown" name="End Test" library="Common">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20171102 11:25:37.677" starttime="20171102 11:25:37.165"></status>
+</kw>
+<status status="PASS" endtime="20171102 11:25:37.677" starttime="20171102 11:25:37.165"></status>
+</kw>
+<doc>Logs in as a buyer.</doc>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="PASS" endtime="20171102 11:25:37.678" critical="yes" starttime="20171102 11:25:15.821"></status>
+</test>
+<status status="PASS" endtime="20171102 11:25:37.679" starttime="20171102 11:25:14.048"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">Smoke</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Deeperdeals" pass="1">Deeperdeals</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
